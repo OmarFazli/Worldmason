@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header, .leftbuttons{
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+#leftbuttonslist{
+    margin-left: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    list-style-type: none;
+
+}
+li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contentspace{
+    padding-left: 20px;  
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+textarea{
+    font-size: 30px;
+    text-align: center;
+}
+
+input{
+    font-size: 30px;
+    text-align: center;
+}

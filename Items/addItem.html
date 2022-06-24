@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Add</title>
+    <link rel="stylesheet" href="../homestyle.css">
+</head>
+<body>
+    <table id="backtable" height=100% width=100%>
+        <tr id="header"><td colspan=2><h1 style="font-size: 70px; margin-left: 10px;">Worldmason</h1> <p style="text-align: right; font-size: 30px;margin-right: 20px;">A free worldbuilding tool</p></td></tr>
+        
+        
+        <tr height=100%>
+            <td class="leftbuttons" width=15% style="margin-right: 20px;">
+                <ul id="leftbuttonslist">
+                    <li onclick="gotoHome()">Home</li>
+                    <li onclick="gotoChars()">Characters</li>
+                    <li onclick="gotoPlaces()">Places</li>
+                    <li onclick="gotoEvents()">Events</li>
+                    <li onclick="gotoCreatures()">Creatures</li>
+                    <li onclick="gotoOrgs()">Organizations</li>
+                    <li onclick="gotoItems()">Items</li>
+                    <li onclick="delStorage()" style="color: red;">Delete Data</li>
+                </ul>
+            </td>
+            <td  id="contentspace" >
+                <table width=100%>
+                    <tr>
+                        <td width=20%>Name:</td>
+                        <td><input width=80% type="text" id='nameadd' placeholder="Name of the Item"></td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                        <td><textarea id="desc" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td onclick="saveItem()" style="color: green;">Save</td>
+                        <td onclick="gotoItems()" style="color: red;">Cancel</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script src="pushpopitemscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creature View</title>
+    <link rel="stylesheet" href="../homestyle.css">
+</head>
+<body>
+    <table id="backtable" height=100% width=100%>
+        <tr id="header"><td colspan=2><h1 style="font-size: 70px; margin-left: 10px;">Worldmason</h1> <p style="text-align: right; font-size: 30px;margin-right: 20px;">A free worldbuilding tool</p></td></tr>
+        
+        
+        <tr height=100%>
+            <td class="leftbuttons" width=15% style="margin-right: 20px;">
+                <ul id="leftbuttonslist">
+                    <li onclick="gotoHome()">Home</li>
+                    <li onclick="gotoChars()">Characters</li>
+                    <li onclick="gotoPlaces()">Places</li>
+                    <li onclick="gotoEvents()">Events</li>
+                    <li onclick="gotoCreatures()">Creatures</li>
+                    <li onclick="gotoOrgs()">Organizations</li>
+                    <li onclick="gotoItems()">Items</li>
+                    <li onclick="delStorage()" style="color: red;">Delete Data</li>
+                </ul>
+            </td>
+            <td  id="contentspace" >
+                <div id="contentdiv"></div>
+                <table width=100%>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" id="nameview"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="descview"></td>
+                    </tr>
+                    <tr>
+                        <td onclick="displayCreature()" style="color: green;">View</td>
+                        <td onclick="gotoCreatures()" style="color: red;">Cancel</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script src="creaturescript.js"></script>
+
+</body>
+</html>
