@@ -1,5 +1,5 @@
 function gotoHome(){window.location.replace('../home.html');}
-function gotoChars(){window.location.replace('../Character/chars.html');}
+function gotoChars(){window.location.replace('../Characters/chars.html');}
 function gotoPlaces(){window.location.replace('places.html');}
 function gotoEvents(){window.location.replace('../Events/events.html');}
 function gotoCreatures(){window.location.replace('../Creatures/creatures.html');}
